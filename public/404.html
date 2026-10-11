@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirecting — Ahmad Azimi</title>
+    <meta name="robots" content="noindex" />
+    <script>
+      /*
+       * SPA fallback for static hosts that serve a custom 404 page on unknown
+       * paths (e.g. GitHub Pages). It stores the intended path, redirects to
+       * the shell, and the client-side router restores the original URL so the
+       * correct route renders. No-op on hosts configured with a rewrite rule
+       * (see README.md), where index.html is served directly instead.
+       */
+      (function () {
+        var storageKey = 'portfolio-spa-path';
+        var target = '/index.html';
+        try {
+          if (location.pathname !== target) {
+            sessionStorage.setItem(storageKey, location.pathname + location.search + location.hash);
+          }
+          var saved = sessionStorage.getItem(storageKey);
+          if (saved) {
+            sessionStorage.removeItem(storageKey);
+            location.replace(saved);
+          } else {
+            location.replace(target);
+          }
+        } catch (error) {
+          location.replace(target);
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <noscript>
+      This site requires JavaScript. <a href="/index.html">Continue to the homepage</a>.
+    </noscript>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "Ahmad Azimi — Software Engineer",
+  "short_name": "A. Azimi",
+  "description": "Software Engineer | Frontend Engineering | Systems & DevOps",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0D1117",
+  "theme_color": "#0D1117",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

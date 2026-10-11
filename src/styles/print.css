@@ -1,0 +1,95 @@
+/*
+ * Print styles. The résumé page must print cleanly for recruiters and produce
+ * an ATS-friendly, text-based PDF; navigation and decorative UI are removed.
+ */
+
+@media print {
+  :root {
+    --color-bg: #ffffff;
+    --color-surface: #ffffff;
+    --color-surface-2: #ffffff;
+    --color-text: #111418;
+    --color-text-secondary: #444b52;
+    --color-border: #c9ced4;
+    --grid-line: transparent;
+    color-scheme: light;
+  }
+
+  html,
+  body {
+    background: #ffffff !important;
+    color: #111418 !important;
+    font-size: 11pt;
+  }
+
+  /* Remove chrome: navigation, footer, decorative elements. */
+  .no-print,
+  header[role='banner'],
+  footer,
+  .skip-link {
+    display: none !important;
+  }
+
+  main {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .print-sheet {
+    max-width: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+    background: transparent !important;
+  }
+
+  a {
+    color: #111418 !important;
+    text-decoration: none !important;
+  }
+
+  /*
+   * Theme colours are applied inline by the component library, so force the
+   * résumé text dark and strip decorative fills for a clean, monochrome,
+   * text-extractable page.
+   */
+  .print-sheet,
+  .print-sheet * {
+    color: #111418 !important;
+    text-shadow: none !important;
+  }
+
+  .print-sheet *,
+  .print-sheet {
+    background-color: transparent !important;
+    box-shadow: none !important;
+  }
+
+  .print-sheet * {
+    border-color: #d4d9de !important;
+  }
+
+  /* Keep text selectable/copyable (ATS-friendly) — never print as image. */
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  h1,
+  h2,
+  h3 {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  li,
+  p {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  section {
+    break-inside: auto;
+  }
+}
