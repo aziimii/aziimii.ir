@@ -119,7 +119,7 @@ export default function Contact() {
             <ChannelCard key={channel.id} channel={channel} />
           ))}
         </Box>
-
+{/* 
         <Box
           sx={{
             mt: 4,
@@ -141,16 +141,12 @@ export default function Contact() {
               letterSpacing: '0.08em',
             }}
           >
-            configuration note
+            Note
           </Typography>
           <Typography variant="body2" sx={{ color: 'text.secondary', mt: 1 }}>
             {contactPage.note} Email and LinkedIn are still marked as placeholders — update them in{' '}
-            <Box component="code" sx={{ fontFamily: 'var(--font-mono)', color: tokens.accent }}>
-              src/data/site.ts
-            </Box>{' '}
-            and the cards above will become working links automatically.
           </Typography>
-        </Box>
+        </Box> */}
 
         <Box
           sx={{

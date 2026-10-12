@@ -12,7 +12,7 @@ export const site = {
   careerInterest:
     'Open to international, remote, and relocation opportunities.',
   baseTitle: 'Ahmad Azimi — Software Engineer',
-  baseUrl: '', // Set to the production origin (e.g. "https://example.com") to enable absolute OG URLs.
+  baseUrl: 'https://aziimii.ir/', // Set to the production origin (e.g. "https://example.com") to enable absolute OG URLs.
 }
 
 export const navItems: NavItem[] = [
@@ -158,19 +158,28 @@ export const contactChannels: ContactChannel[] = [
   {
     id: 'email',
     label: 'Email',
-    value: 'your-email@example.com',
-    href: null,
-    status: 'placeholder',
-    note: 'Add the real address in src/data/site.ts (contactChannels) before publishing.',
+    value: 'azimi.ahmad@outlook.com',
+    href: 'mailto:azimi.ahmad@outlook.com',
+    status: 'verified',
+    // note: 'Add the real address in src/data/site.ts (contactChannels) before publishing.',
     icon: 'mail',
+  },
+    {
+    id: 'mobile',
+    label: 'Mobile',
+    value: '+989354106998',
+    href: 'tel:+989354106998',
+    status: 'verified',
+    // note: 'Add the real address in src/data/site.ts (contactChannels) before publishing.',
+    icon: 'mobile',
   },
   {
     id: 'linkedin',
     label: 'LinkedIn',
-    value: 'linkedin.com/in/<your-handle>',
-    href: null,
-    status: 'placeholder',
-    note: 'Add the verified profile URL in src/data/site.ts (contactChannels).',
+    value: 'https://www.linkedin.com/in/aziimii/',
+    href: 'https://www.linkedin.com/in/aziimii/',
+    status: 'verified',
+    // note: 'Add the verified profile URL in src/data/site.ts (contactChannels).',
     icon: 'linkedin',
   },
   {

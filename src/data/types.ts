@@ -40,6 +40,7 @@ export type IconKey =
   | 'wrench'
   | 'shieldCheck'
   | 'workflow'
+  |  'mobile'
 
 export interface NavItem {
   id: string
