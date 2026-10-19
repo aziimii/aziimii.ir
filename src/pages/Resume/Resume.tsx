@@ -250,11 +250,16 @@ export default function Resume() {
           <Box component="section" aria-labelledby="resume-summary" sx={{ mb: 4 }}>
             <ResumeHeading id="resume-summary">Professional summary</ResumeHeading>
             <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-              Software engineer with experience spanning frontend development and systems and
-              network administration. Comfortable working across the stack — from React and
-              TypeScript interfaces to APIs, Linux servers, containers, web servers, and delivery
-              pipelines. Focused on maintainable implementations, reliable delivery, and
-              understanding how applications behave in real environments.
+              Software engineer with IT infrastructure roots in systems and network administration,
+              now focused on application development. Builds backend APIs and services with Node.js
+              and NestJS, models data in PostgreSQL, and connects them to React and TypeScript
+              frontends — then deploys and operates the whole system on Linux with Docker, Docker
+              Compose, and Nginx. That cross-layer background turns into engineering outcomes:
+              services designed to behave predictably in production, repeatable deployments, and
+              debugging that spans application code, networks, and servers. The Sherafat Gold
+              Platform — a React frontend behind a NestJS API gateway, with multiple backend
+              services, PostgreSQL databases, and a Docker Compose deployment — is the clearest
+              example of that end-to-end work.
             </Typography>
           </Box>
 

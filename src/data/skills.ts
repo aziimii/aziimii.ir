@@ -4,16 +4,59 @@ import type { Capability, SkillGroup } from './types'
  * Skill content. Every item here is supported by the owner's stated experience
  * or by files in the referenced project repositories. No proficiency ratings or
  * years-of-experience numbers are published, because none are verified.
+ *
+ * Ordering is intentional: backend/API work, deployment tooling, and systems
+ * knowledge lead; frontend follows.
  */
 
 export const skillGroups: SkillGroup[] = [
+  {
+    id: 'backend',
+    label: 'Backend and APIs',
+    items: [
+      'Node.js',
+      'NestJS',
+      'REST API design',
+      'API gateways',
+      'JWT authentication',
+      'API documentation',
+      'WebSocket integration',
+      'Service integration',
+    ],
+  },
+  {
+    id: 'infrastructure',
+    label: 'Deployment and infrastructure',
+    items: [
+      'Docker',
+      'Docker Compose',
+      'Nginx reverse proxy',
+      'TLS configuration',
+      'CI/CD (GitHub Actions)',
+      'Deployment and web operations',
+      'Environment configuration',
+    ],
+  },
+  {
+    id: 'systems',
+    label: 'Systems and data',
+    items: [
+      'Linux',
+      'Systems and network administration',
+      'Networking and troubleshooting',
+      'PostgreSQL',
+      'SQL',
+      'Production debugging',
+      'Data analysis',
+    ],
+  },
   {
     id: 'frontend',
     label: 'Frontend',
     items: [
       'React',
-      'JavaScript',
       'TypeScript',
+      'JavaScript',
       'HTML',
       'CSS',
       'Responsive UI',
@@ -21,71 +64,30 @@ export const skillGroups: SkillGroup[] = [
     ],
   },
   {
-    id: 'backend',
-    label: 'Backend and APIs',
-    items: [
-      'Node.js',
-      'NestJS',
-      'REST APIs',
-      'Service integration',
-      'WebSocket integration',
-    ],
-  },
-  {
-    id: 'data',
-    label: 'Data',
-    items: ['PostgreSQL', 'SQL', 'Data analysis'],
-  },
-  {
-    id: 'infrastructure',
-    label: 'Infrastructure and delivery',
-    items: [
-      'Linux',
-      'Docker',
-      'Docker Compose',
-      'Nginx',
-      'CI/CD',
-      'Deployment and web operations',
-    ],
-  },
-  {
     id: 'practices',
     label: 'Engineering practices',
     items: [
-      'Debugging',
       'Maintainability',
-      'Troubleshooting',
+      'Debugging',
       'Documentation',
       'Security-conscious operations',
+      'Cross-layer architecture',
     ],
   },
 ]
 
 export const capabilities: Capability[] = [
   {
-    id: 'frontend-engineering',
-    title: 'Frontend Engineering',
-    description:
-      'Building interface code that stays readable as features grow.',
-    items: [
-      'React',
-      'JavaScript',
-      'TypeScript',
-      'Component architecture',
-      'Responsive interfaces',
-    ],
-    icon: 'monitor',
-  },
-  {
     id: 'application-development',
     title: 'Application Development',
     description:
-      'Connecting interfaces to services and keeping application code maintainable.',
+      'Designing backend services and APIs that stay readable and predictable as features grow.',
     items: [
-      'API integration',
+      'REST APIs and API gateways',
+      'Node.js and NestJS services',
+      'Authentication and authorization',
+      'PostgreSQL data modelling',
       'Application structure',
-      'Maintainability',
-      'Debugging',
     ],
     icon: 'code',
   },
@@ -93,12 +95,12 @@ export const capabilities: Capability[] = [
     id: 'systems-infrastructure',
     title: 'Systems & Infrastructure',
     description:
-      'Running applications on real servers, not only on a local machine.',
+      'Running applications on real servers — and designing for how they actually behave there.',
     items: [
-      'Linux',
-      'Docker',
-      'Web server configuration',
-      'Deployment operations',
+      'Linux servers',
+      'Docker and Docker Compose',
+      'Nginx reverse proxy and TLS',
+      'Networking and troubleshooting',
     ],
     icon: 'server',
   },
@@ -107,26 +109,40 @@ export const capabilities: Capability[] = [
     title: 'Software Delivery',
     description: 'Getting changes out reliably and knowing when something breaks.',
     items: [
-      'CI/CD workflows',
+      'CI/CD workflows (GitHub Actions)',
+      'Deployment pipelines',
       'Environment configuration',
-      'Troubleshooting',
       'Operational reliability',
     ],
     icon: 'workflow',
   },
+  {
+    id: 'frontend-engineering',
+    title: 'Frontend Engineering',
+    description: 'Building interface code that stays readable as features grow.',
+    items: [
+      'React',
+      'TypeScript',
+      'Component architecture',
+      'Responsive interfaces',
+      'API integration',
+    ],
+    icon: 'monitor',
+  },
 ]
 
 export const selectedTechnologies = [
+  'NestJS',
+  'Node.js',
+  'REST APIs',
+  'PostgreSQL',
+  'Docker',
+  'Docker Compose',
+  'Nginx',
+  'Linux',
+  'GitHub Actions',
   'React',
   'TypeScript',
   'Vite',
   'Material UI',
-  'Node.js',
-  'NestJS',
-  'PostgreSQL',
-  'Docker',
-  'Nginx',
-  'Linux',
-  'GitHub Actions',
-  'REST APIs',
 ]

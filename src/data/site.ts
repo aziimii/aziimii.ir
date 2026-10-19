@@ -7,12 +7,13 @@ import type { ContactChannel, NavItem, ResumePlaceholder } from './types'
 export const site = {
   name: 'Ahmad Azimi',
   role: 'Software Engineer',
-  positioning: 'Software Engineer | Frontend Engineering | Systems & DevOps',
-  shortPositioning: 'Frontend · Systems · DevOps',
+  positioning:
+    'Software Engineer | Application Development | Systems & Infrastructure',
+  shortPositioning: 'Application Dev · Systems · Infrastructure',
   careerInterest:
     'Open to international, remote, and relocation opportunities.',
   baseTitle: 'Ahmad Azimi — Software Engineer',
-  baseUrl: 'https://aziimii.ir/', // Set to the production origin (e.g. "https://example.com") to enable absolute OG URLs.
+  baseUrl: 'https://aziimii.ir/',
 }
 
 export const navItems: NavItem[] = [
@@ -23,16 +24,16 @@ export const navItems: NavItem[] = [
     icon: 'home',
     title: 'Home',
     description:
-      'Ahmad Azimi — software engineer focused on frontend engineering, systems, and DevOps.',
+      'Ahmad Azimi — software engineer focused on application development, backend APIs, systems, and infrastructure.',
   },
   {
     id: 'about',
-    label: 'About',
+    label: 'About Me',
     to: '/about',
     icon: 'user',
     title: 'About',
     description:
-      'Professional narrative, engineering principles, technical focus areas, and career interests of Ahmad Azimi.',
+      'Professional background, engineering principles, technical focus areas, and career interests of Ahmad Azimi.',
   },
   {
     id: 'projects',
@@ -41,7 +42,7 @@ export const navItems: NavItem[] = [
     icon: 'layers',
     title: 'Projects',
     description:
-      'Case studies covering frontend engineering, full-stack delivery, and systems and deployment work.',
+      'Case studies covering frontend applications, backend services, APIs, and deployment workflows.',
   },
   {
     id: 'resume',
@@ -50,7 +51,7 @@ export const navItems: NavItem[] = [
     icon: 'fileText',
     title: 'Résumé',
     description:
-      'Printable, ATS-friendly résumé: summary, skills, experience, and selected projects.',
+      'Printable, ATS-friendly résumé covering engineering experience, skills, and selected projects.',
   },
   {
     id: 'notes',
@@ -59,7 +60,7 @@ export const navItems: NavItem[] = [
     icon: 'notebook',
     title: 'Engineering Notes',
     description:
-      'Draft topics on maintainable React applications, deployments, API debugging, and CI/CD.',
+      'Technical notes about frontend architecture, backend development, deployments, and software engineering practices.',
   },
   {
     id: 'contact',
@@ -68,15 +69,15 @@ export const navItems: NavItem[] = [
     icon: 'mail',
     title: 'Contact',
     description:
-      'Ways to get in touch with Ahmad Azimi about frontend, systems, and software delivery work.',
+      'Ways to contact Ahmad Azimi about software engineering opportunities and technical collaboration.',
   },
 ]
 
 export const hero = {
-  eyebrow: 'SOFTWARE ENGINEER / ENGINEERING WORKSPACE',
-  heading: 'Building software with engineering discipline.',
+  eyebrow: 'SOFTWARE ENGINEER / APP DEVELOPMENT / SYSTEMS & INFRASTRUCTURE',
+  heading: 'Building reliable software across the stack.',
   paragraph:
-    "I'm a software engineer with a background in systems and network administration and extensive experience in frontend development. I enjoy building reliable applications, designing maintainable interfaces, and solving problems across the software stack.",
+    "I started in IT infrastructure — systems and network administration — and moved into software engineering, so I build applications with production already in mind. Today that means designing backend APIs and services with Node.js and NestJS, modelling data in PostgreSQL, and connecting them to React and TypeScript frontends — then deploying and operating the whole thing on Linux with Docker, Compose, and Nginx. Having run the infrastructure myself, I care about the outcomes it buys: services that behave predictably in production, deployments that are repeatable, and debugging that goes all the way down to the network.",
   primaryCta: { label: 'Explore Projects', to: '/projects' },
   secondaryCta: { label: 'View Résumé', to: '/resume' },
   statusLine: 'Interested in international and remote opportunities.',
@@ -85,75 +86,86 @@ export const hero = {
 }
 
 export const approach = {
-  heading: 'Good engineering goes beyond writing code.',
-  copy: 'I value clear architecture, maintainable implementations, reliable delivery, and understanding how applications behave in real environments. My background across frontend development and systems administration helps me approach software from both the user interface and operational perspectives.',
+  heading: 'Engineering means understanding the whole system.',
+  copy:
+    'I believe good software requires more than writing isolated pieces of code. My experience across frontend applications, backend services, APIs, databases, Linux environments, and deployment workflows helps me understand software as a complete system — from user experience to production operation.',
 }
 
 export const closingCta = {
-  heading: 'Have an interesting engineering problem?',
-  copy: "I'm interested in connecting with teams building useful products and reliable software.",
+  heading: 'Have a challenging engineering problem?',
+  copy:
+    "I'm interested in working with teams that build meaningful products, solve complex technical problems, and care about software quality.",
   button: 'Get in Touch',
   to: '/contact',
 }
 
 export const about = {
   paragraphs: [
-    "I'm a software engineer whose experience spans frontend development and systems and network administration. I enjoy understanding how a product works as a whole—from the user interface and application structure to APIs, deployment, and operational concerns.",
-    'I approach engineering by breaking complex problems into manageable parts, choosing practical solutions, and keeping maintainability in mind.',
-    "I'm particularly interested in teams that value thoughtful technical decisions, collaboration, continuous learning, and software that solves real problems.",
+    "I'm a software engineer with experience across frontend development, backend services, and infrastructure. My journey started with systems and network administration, which shaped the way I think about reliability, performance, and real-world software operations.",
+    'I build web applications with modern frontend technologies while also working with backend APIs, databases, authentication flows, server environments, and deployment workflows. I enjoy connecting different parts of a system and making them work together reliably.',
+    "I'm interested in engineering environments where thoughtful architecture, clean implementation, collaboration, and continuous improvement are valued.",
   ],
   principles: [
     {
-      title: 'Break problems down',
-      text: 'Split complex requirements into small, independently understandable parts before writing code.',
+      title: 'Understand the whole system',
+      text:
+        'Consider user experience, application logic, infrastructure, and operational needs together when designing software.',
     },
     {
-      title: 'Choose practical solutions',
-      text: 'Prefer the simplest approach that satisfies the real constraints — reliability, time, and maintainability.',
+      title: 'Break complex problems down',
+      text:
+        'Turn large technical challenges into smaller, understandable pieces that can be solved and improved step by step.',
     },
     {
-      title: 'Design for maintainability',
-      text: 'Keep structure, naming, and boundaries clear so the next change is cheap and safe.',
+      title: 'Build maintainable software',
+      text:
+        'Keep architecture, naming, and code boundaries clear so future changes remain predictable and safe.',
     },
     {
-      title: 'Think in operations',
-      text: 'Consider how software is deployed, observed, and repaired in real environments, not only how it runs locally.',
+      title: 'Think beyond development',
+      text:
+        'Understand how applications are deployed, monitored, secured, and maintained in real environments.',
     },
     {
       title: 'Verify before claiming',
-      text: 'Test behaviour, read error output, and separate what is confirmed from what is assumed.',
+      text:
+        'Test behaviour, investigate errors, and separate confirmed facts from assumptions.',
     },
     {
       title: 'Keep learning',
-      text: 'Treat unfamiliar systems as a normal part of the job and document what is learned along the way.',
+      text:
+        'Continuously explore new technologies and improve engineering practices through real-world experience.',
     },
   ],
   focusAreas: [
     {
       title: 'Frontend engineering',
-      text: 'Component-based React and TypeScript interfaces, responsive layouts, routing, forms, and API integration.',
+      text:
+        'React and TypeScript applications, component architecture, responsive interfaces, routing, forms, state management, and API integration.',
     },
     {
-      title: 'Application structure',
-      text: 'Organising code so features, services, and state are easy to locate, test, and extend.',
+      title: 'Backend development',
+      text:
+        'Backend services, REST APIs, authentication, database integration, business logic, and scalable application structure.',
     },
     {
       title: 'Systems and infrastructure',
-      text: 'Linux servers, Docker and Compose environments, web server configuration, TLS, and reverse proxies.',
+      text:
+        'Linux servers, Docker and Compose environments, reverse proxies, TLS configuration, networking, and production troubleshooting.',
     },
     {
-      title: 'Delivery and operations',
-      text: 'CI/CD workflows, environment configuration, deployment automation, troubleshooting, and website security.',
+      title: 'Software delivery',
+      text:
+        'Deployment workflows, CI/CD practices, environment management, debugging, monitoring, and improving software reliability.',
     },
   ],
   careerInterests: [
-    'Frontend engineering roles with room to own application structure.',
-    'Product teams that value maintainable code and thoughtful technical decisions.',
-    'Remote-first or internationally distributed teams.',
+    'Software engineering roles combining application development with systems and infrastructure responsibilities.',
+    'Product teams that value maintainable architecture and thoughtful technical decisions.',
+    'Remote-first or internationally distributed engineering teams.',
     'Opportunities that could support relocation abroad.',
   ],
 }
-
 export const contactChannels: ContactChannel[] = [
   {
     id: 'email',
@@ -161,16 +173,14 @@ export const contactChannels: ContactChannel[] = [
     value: 'azimi.ahmad@outlook.com',
     href: 'mailto:azimi.ahmad@outlook.com',
     status: 'verified',
-    // note: 'Add the real address in src/data/site.ts (contactChannels) before publishing.',
     icon: 'mail',
   },
-    {
+  {
     id: 'mobile',
     label: 'Mobile',
     value: '+989354106998',
     href: 'tel:+989354106998',
     status: 'verified',
-    // note: 'Add the real address in src/data/site.ts (contactChannels) before publishing.',
     icon: 'mobile',
   },
   {
@@ -179,7 +189,6 @@ export const contactChannels: ContactChannel[] = [
     value: 'https://www.linkedin.com/in/aziimii/',
     href: 'https://www.linkedin.com/in/aziimii/',
     status: 'verified',
-    // note: 'Add the verified profile URL in src/data/site.ts (contactChannels).',
     icon: 'linkedin',
   },
   {
@@ -202,32 +211,38 @@ export const contactChannels: ContactChannel[] = [
 ]
 
 export const contactPage = {
-  heading: 'Get in touch',
-  intro: 'The fastest way to reach me is email or LinkedIn. I am interested in international, remote, and relocation-friendly engineering roles, and I am happy to talk through projects, architecture decisions, or frontend and infrastructure work in more detail.',
-  note: 'This site is static and has no backend, so there is no contact form here — the channels below link directly to real destinations once configured.',
+  heading: 'Let’s build something together',
+  intro:
+    'The best way to reach me is email or LinkedIn. I am interested in software engineering opportunities involving application development, backend APIs, systems, and infrastructure. I enjoy discussing architecture, technical challenges, and building reliable products.',
+  note:
+    'This site is a personal portfolio showcasing my engineering experience, projects, and technical interests.',
 }
 
 export const resumePlaceholders: ResumePlaceholder[] = [
   {
     section: 'Education',
-    note: 'Degrees, institutions, and graduation dates must come from verified source material before this section is filled in.',
+    note:
+      'Degrees, institutions, and graduation dates will be added from verified information.',
   },
   {
     section: 'Languages',
-    note: 'Language proficiency has not been verified and is intentionally left unlisted rather than guessed.',
+    note:
+      'Language proficiency will be listed based on verified information.',
   },
   {
     section: 'Certifications',
-    note: 'No certifications are claimed here. Add only those that can be verified.',
+    note:
+      'Only verified certifications and professional credentials will be included.',
   },
   {
     section: 'Earlier experience',
-    note: 'Employers, titles, and dates before September 2025 will be added once verified records are available.',
+    note:
+      'Previous roles, responsibilities, and timelines will be added from verified career records.',
   },
 ]
 
 export const seoDefaults = {
   title: site.baseTitle,
   description:
-    'Portfolio of Ahmad Azimi, a software engineer focused on frontend engineering, application development, systems and DevOps. Projects, engineering notes, and résumé.',
+    'Portfolio of Ahmad Azimi, a software engineer working in application development — backend APIs, deployment tooling, and systems & infrastructure — with roots in IT infrastructure.',
 }

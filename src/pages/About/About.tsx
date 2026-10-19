@@ -49,8 +49,8 @@ export default function About() {
     <Box>
       <PageHeader
         path="~/about"
-        title="About"
-        description="A professional narrative: how I approach engineering, where I focus technically, and what kind of work I am looking for."
+        title="About Me"
+        description="My journey as a software engineer, the principles behind my work, the technologies I build with, and the opportunities I’m working toward."
       />
 
       <Container maxWidth="lg">

@@ -1,0 +1,12 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      # leave LLM_API_KEY empty to run offline in echo mode
+      LLM_API_KEY: ${LLM_API_KEY:-}
+      LLM_BASE_URL: ${LLM_BASE_URL:-https://api.openai.com/v1}
+      LLM_MODEL: ${LLM_MODEL:-gpt-4o-mini}
+      RETRIEVAL_TOP_K: ${RETRIEVAL_TOP_K:-3}
+    restart: unless-stopped

@@ -184,6 +184,39 @@ function Hero() {
             backdropFilter: 'blur(4px)',
           }}
         >
+          <Stack direction="row" spacing={2} alignItems="center" sx={{ mb: 2 }}>
+            <Box
+              component="img"
+              src="/assets/pixel-avatar.png"
+              alt="Pixel-art portrait of Ahmad Azimi at a desk, coding with a plant nearby"
+              sx={{
+                width: 128,
+                height: 128,
+                borderRadius: 2,
+                border: '1px solid',
+                borderColor: 'divider',
+                flexShrink: 0,
+              }}
+            />
+            <Box sx={{ minWidth: 0 }}>
+              <Typography
+                sx={{ fontFamily: 'var(--font-mono)', fontSize: '0.9rem', color: 'text.primary' }}
+              >
+                {site.name}
+              </Typography>
+              <Typography
+                sx={{
+                  fontFamily: 'var(--font-mono)',
+                  fontSize: '0.72rem',
+                  color: 'text.secondary',
+                  mt: 0.25,
+                }}
+              >
+                {site.role} · application development
+              </Typography>
+            </Box>
+          </Stack>
+
           <Stack
             direction="row"
             alignItems="center"
